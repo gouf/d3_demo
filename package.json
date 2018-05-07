@@ -1,0 +1,14 @@
+{
+  "name": "d3_demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "d3": "^5.1.0",
+    "jquery": "^3.3.1",
+    "webpack": "^4.7.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^2.1.2"
+  }
+}
