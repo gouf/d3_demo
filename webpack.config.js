@@ -13,5 +13,13 @@ module.exports = {
       // https://github.com/webpack-contrib/uglifyjs-webpack-plugin
       parallel: true
     })
-  ]
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader' ]
+      }
+    ]
+  }
 }
