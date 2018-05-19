@@ -1,3 +1,4 @@
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const path = require('path')
 module.exports = {
   entry: './src/index.js',
@@ -5,5 +6,12 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
-  mode: 'development'
+  mode: 'development',
+  plugins: [
+    new UglifyJSPlugin({
+      // These options are can be found in;
+      // https://github.com/webpack-contrib/uglifyjs-webpack-plugin
+      parallel: true
+    })
+  ]
 }
